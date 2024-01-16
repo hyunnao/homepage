@@ -172,11 +172,14 @@ a {
 }
 
 .reference .slick-slide .progress::before {
-  content: url(../images/finance_ball.png);
+  content: '';
+  background-image: url(../images/finance_ball.png);
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+  width: 132px;
+  height: 132px;
 }
 
 .reference .slick-slide .progress .progress-title {
@@ -216,31 +219,8 @@ a {
 }
 
 .reference .swiper-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 98px;
 }
-
-.reference .swiper-pagination .swiper-pagination-bullet {
-  margin: 0 10px;
-  cursor: pointer;
-  display: inline-flex;
-}
-
-.reference .swiper-pagination .swiper-pagination-bullet::before {
-  content: url(../images/bullet.png);
-
-}
-
-.reference .swiper-pagination .swiper-pagination-bullet-active::before {
-  content: url(../images/bullet_active.png);
-  
-}
-
-
-
-
 
 /* value */
 .value {
@@ -284,7 +264,9 @@ a {
 }
 
 .value .value-header a::after {
-  content: url(../images/Btn_back.png);
+  content: '';
+  background-image: url(../images/Btn_back.png);
+  background-size: 24px 24px;
   position: absolute;
   left: 151px;
   top: -2px;
@@ -389,6 +371,10 @@ a {
   letter-spacing: -0.5px;
   font-size: 13px;
   display: block;
+}
+
+.what .swiper-pagination {
+  display: none;
 }
 
 /* project  */
@@ -547,4 +533,58 @@ a {
   color: #7C7C7E;
   font-size: 14px;
   letter-spacing: 0.2px;
+}
+
+
+/* pagination */
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  margin: 0 10px;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.swiper-pagination .swiper-pagination-bullet::before {
+  content: '';
+  background-image:  url(../images/bullet.png);
+  background-size: 15px;
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active::before {
+  content: '';
+  background-image:  url(../images/bullet_active.png);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  
+}
+
+.swiper-pagination .swiper-pagination-bullet-b {
+  margin: 0 10px;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.swiper-pagination .swiper-pagination-bullet-b::before {
+  content: '';
+  background-image:  url(../images/bullet_b.png);
+  background-size: 15px;
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-b-active::before {
+  content: '';
+  background-image:  url(../images/bullet_b_active.png);
+  background-size: 24px;
+  width: 24px;
+  height: 24px;
+  
 }
