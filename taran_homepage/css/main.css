@@ -1,0 +1,550 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  color: #000;
+  font-size: 16px;
+}
+
+html, body {
+  height: 100%;
+}
+
+/* 영문일때 꼭 넣어야함 */
+.eng {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 데스크탑 */
+.inner {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/* header */
+.header {
+  height: 110px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+
+.header .inner {
+  position: relative;
+}
+
+.header .logo {
+  position: absolute;
+  top: 31px;
+  left: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.header .menu {
+  position: absolute;
+  top: 43px;
+  right: 0;
+}
+
+.header .menu .hamburger-menu {
+  display: none;
+  position:relative;
+  width:40px;
+  height: 11px;
+  cursor:pointer;
+}
+
+.header .menu ul {
+  display: flex;
+  justify-content: space-between;
+  width: 377px;
+}
+
+.header .menu ul li a {
+  font-weight: bold;
+  font-size: 20px; 
+  color: #000;
+}
+
+
+
+/* visual */
+.visual {
+  height: 100%;
+}
+
+.visual .inner {
+  position: relative;
+}
+
+.visual .img {
+  position: absolute;
+  top: 210px;
+  right: 0;
+}
+
+.visual .img img {
+  width: 205px;
+  height: 202px;
+}
+
+.visual .text {
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+}
+
+.visual .eng {
+  font-weight: 900;
+  font-size: 70px;
+}
+
+.visual .eng br {
+  display: none;
+}
+
+
+.visual .kor {
+  font-weight: bold;
+  font-size: 34px;
+  margin-top: 20px;
+}
+
+
+@media screen and (max-width:1023px) {
+  /* 타블렛 */
+    
+  .visual .eng br {
+    display: none;
+  }
+
+}
+
+
+/* reference */
+.reference {
+  position: relative;
+  height: 100%;
+}
+
+.reference .bg{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  background: linear-gradient(45deg, rgba(207,223,247,1) 0%, rgba(230,227,252,1) 60%, rgba(240,244,255,1) 80%);
+  z-index: -1;
+}
+
+.reference .inner {
+  height: 100%;
+}
+
+.reference .slider {
+  
+}
+
+.reference .slick-track {
+  display: flex;
+  padding-top: 105px;
+  overflow: hidden;
+}
+
+.reference .slick-slide{
+  padding: 0 100px;
+}
+
+
+.reference .slick-slide .content {
+  margin-top: -224px;
+  width: 100%;
+}
+
+.reference .slick-slide .progress {
+  color: #fff;
+  height: 132px;
+  position: relative;
+}
+
+.reference .slick-slide .progress::before {
+  content: url(../images/finance_ball.png);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.reference .slick-slide .progress .progress-title {
+  display: block;
+  position: absolute;
+  top: 55px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.reference .slick-slide .progress span {
+  display: block;
+  position: absolute;
+  top: 84px;
+  left: 50%;
+  transform: translateX(-50%);
+  letter-spacing: -0.5px;
+  opacity: 0.7;
+}
+
+.reference .slick-slide .title {
+  font-size: 44px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}
+
+.reference .slick-slide .text {
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+  margin-top: 12px;
+
+}
+
+.reference .swiper-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 98px;
+}
+
+.reference .swiper-pagination .swiper-pagination-bullet {
+  margin: 0 10px;
+  cursor: pointer;
+  display: inline-flex;
+}
+
+.reference .swiper-pagination .swiper-pagination-bullet::before {
+  content: url(../images/bullet.png);
+
+}
+
+.reference .swiper-pagination .swiper-pagination-bullet-active::before {
+  content: url(../images/bullet_active.png);
+  
+}
+
+
+
+
+
+/* value */
+.value {
+  height: 100%;
+}
+
+.value .value-header {
+  float: left;
+  padding-right: 120px;
+  margin-top: 370px;
+}
+
+.value .value-header .title {
+  margin-bottom: 77px;
+}
+
+.value .value-header .title p {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.value .value-header a {
+  display: block;
+  font-size: 18px;
+  color:#282525;
+  margin-left: 37px;
+  position: relative;
+} 
+
+.value .value-header a::before {
+  content: '';
+  position: absolute;
+  top: -29px;
+  left: -37px;
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  background-color: #ededed;
+  z-index: -1;
+  cursor: inherit;
+}
+
+.value .value-header a::after {
+  content: url(../images/Btn_back.png);
+  position: absolute;
+  left: 151px;
+  top: -2px;
+}
+
+.value .value-list {
+  float: right;
+  padding-left: 20px;
+  margin-top: 370px;
+  position: relative;
+}
+
+.value .value-list .text-group {
+  margin-bottom: 88px;
+}
+
+.value .value-list .text-group h4 {
+  float: left;
+  color: #00BB58;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.value .value-list .text-group .text {
+  padding-left: 100px;
+
+}
+
+.value .value-list .text-group strong {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  padding-bottom: 12px;
+  
+}
+ /* what */
+ .what {
+  height: 100%;
+  background-color: #2B2B2C;
+}
+
+.what .inner {
+  position: relative;
+}
+
+.what .inner > h2 {
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 308px;
+  color: #fff;
+  padding-bottom: 90px;
+  display: inline-block;
+}
+
+.what .what-list {
+  position: absolute;
+  top: 480px;
+  display: flex;
+}
+
+.what .what-list-item {
+  padding-right: 92px;
+}
+
+.what .what-list-item:last-child {
+  padding-right: 0;
+}
+
+.what .what-list-item img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 48px;
+}
+
+.what .what-list-item .title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.what .what-list-item:nth-child(2) > .title {
+  letter-spacing: -0.8px;
+}
+
+.what .what-list-item h4 {
+  color: #fff;
+  
+}
+.what .what-list-item ul {
+  margin-top: 26px;
+}
+
+
+.what .what-list-item ul li {
+  color: #D3D3D4;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 12px;
+  
+}
+
+.what .what-list-item ul li > span {
+  letter-spacing: -0.5px;
+  font-size: 13px;
+  display: block;
+}
+
+/* project  */
+
+.project {
+  height: 100%;
+  overflow: hidden;
+}
+
+.project h2 {
+  font-size: 70px;
+  font-weight: bold;
+  float: left;
+  margin-top: 190px;
+}
+
+.project .content {
+  float: right;
+  margin-top: 191px;
+}
+
+.project .content .more {
+  font-weight: 600;
+  font-size: 19.8px;
+}
+
+.project .count {
+  font-size: 100px;
+  font-weight: 800;
+  vertical-align: baseline;
+}
+
+.project .count span {
+  display: inline-block;
+  vertical-align: middle;
+  height: 110px;
+}
+
+.project .project-content {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project .project-list {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project .project-list .project-list-item {
+  margin-right: 24px;
+}
+
+.project .project-content .proejct-logo {
+  padding-top: 50px;
+}
+
+.project .project-content .proejct-logo img {
+  height: 276px;
+}
+
+/* footer */
+.footer {
+  height: 100%;
+  width: 100%;
+  background: #19191A url(../images/footer_bg.png) no-repeat;
+  background-size: cover;
+}
+
+.footer .inner {
+  position: relative;
+}
+
+.footer .footer-content {
+  padding-top: 412px;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.footer .footer-primary {
+  padding-right: 400px;
+}
+
+.footer .footer-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-menu li {
+  margin-top: 48px;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.footer .footer-menu li:first-child {
+  margin-top: 0;
+}
+
+.footer .footer-menu li a {
+  color: #fff;
+}
+
+.footer .footer-info {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-info > div {
+  margin-bottom: 16px;
+}
+
+.footer .footer-info .footer-logo {
+  margin-bottom: 24px;
+  width: 154px;
+}
+
+.footer .footer-info .footer-info-contact .gray {
+  color: #7C7C7E;
+  margin-right: 5px;
+}
+
+.footer .footer-info .footer-info-contact span:nth-child(3) {
+  margin-left: 16px;
+}
+
+.footer .footer-info .footer-info-download {
+  border: 1px solid #00e16b;
+  margin-top: 21px;
+  max-width: 300px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer .footer-info .footer-info-download a {
+  padding: 26px 66px 26px 29px;
+  color: #00e16b;
+  display: inline-block;
+  position: relative;
+}
+
+.footer .footer-info .footer-info-download a > img {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.footer .footer-bottom {
+  position: absolute;
+  bottom: 110px;
+}
+
+.footer .footer-bottom .copyright{
+  color: #7C7C7E;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+}
