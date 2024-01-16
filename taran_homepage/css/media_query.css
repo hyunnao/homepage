@@ -1,0 +1,336 @@
+/* 타블렛 */
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .inner {
+    width: 720px;
+    margin: 0 24px;
+  }
+}
+
+/* 모바일 */
+@media screen and (max-width:767px) {
+
+  .inner {
+    width: 312px;
+    min-width: 312px;
+    margin: 0 24px;
+  }
+
+
+  /* header */
+  .header {
+    height: 56px;
+  }
+
+  .header .logo {
+    width: 68px;
+    height: 32px;
+  }
+  
+  .header .logo img {
+    width: 68px;
+    height: 32px;
+  }
+
+  .header .menu {
+    top: 32px;
+  }
+
+  .header .menu .hamburger-menu {
+    display: block;
+    width: 30px;
+  }
+
+  .header .menu .hamburger-menu span {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    background: #2d2d2d;
+    transition: all 0.3s;
+  }
+  
+  .header .menu .hamburger-menu span:first-child {
+    top: 0;
+  }
+
+  .header .menu .hamburger-menu span:last-child {
+    bottom: 0;
+  }
+
+
+  .header .menu .hamburger-menu:hover span:first-child {
+    transform: rotate(45deg);
+  }
+
+  .header .menu .hamburger-menu:hover span:last-child{
+    top: 0;
+    transform: rotate(-45deg);
+  }
+
+  .header .menu ul {
+    display: none;
+  }
+
+  /* visual */
+  .visual .img {
+    top: 128px;
+  }
+
+  .visual .img img {
+    width: 118px;
+    height: 116px;
+  }
+  
+  .visual .text {
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+  }
+  
+  .visual .eng {
+    font-size: 36px;
+    word-break: break-all;
+  }
+
+  .visual .eng br {
+    display: block;
+  }
+  
+  .visual .kor {
+    font-size: 16px;
+    margin-top: 13px;
+  }
+
+  /* reference */
+  .reference .slick-list {
+    overflow: hidden;
+  }
+
+  .reference .slick-track {
+    padding-top: 176px;
+    width: calc(312px * 6);
+  }
+  
+  .reference .slick-slide{
+    padding: 0;
+  }
+  
+  .reference .slick-slide img {
+    width: 100%;
+  }
+  
+  .reference .slick-slide .content {
+    margin-top: -60px;
+    width: 100%;
+  }
+  
+  .reference .slick-slide .progress {
+    color: #fff;
+    height: 86px;
+    position: relative;
+  }
+  
+  .reference .slick-slide .progress::before {
+    background-size: 86px 86px;
+    width: 86px;
+    height: 86px;
+  }
+  
+  .reference .slick-slide .progress .progress-title {
+    top: 34px;
+    font-size: 14px;
+  }
+  
+  .reference .slick-slide .progress span {
+    font-size: 12px;
+    top: 52px;
+  }
+  
+  .reference .slick-slide .title {
+    font-size: 22px;
+    margin-top: 32px;
+  }
+  
+  .reference .slick-slide .text {
+    font-size: 14px;
+    word-break: break-all;
+    line-height: 20px;
+    text-align: center;
+  }
+  
+  .reference .swiper-pagination {
+      margin-top: 157px;
+    }
+ 
+  
+  /* value */
+  .value .value-header {
+    padding-right: 0;
+    margin-top: 116px;
+  }
+  
+  .value .value-header .title {
+    margin-bottom: 31px;
+  }
+  
+  .value .value-header .title p {
+    font-size: 36px;
+  }
+  
+  .value .value-header a {
+    font-size: 12px;
+    margin-left: 20px;
+  } 
+  
+  .value .value-header a::before {
+    top: -16px;
+    left: -20px;
+    width: 47px;
+    height: 47px;
+  }
+  
+  .value .value-header a::after {
+    background-size: 12px 12px;
+    width: 12px;
+    height: 12px;
+    left: 96px;
+    top: 1px;
+  }
+  
+  .value .value-list {
+    margin-top: 60px;
+    padding-left: 0;
+    float: left;
+  }
+  
+  .value .value-list .text-group {
+    margin-bottom: 32px;
+  }
+  
+  .value .value-list .text-group h4 {
+    font-size: 14px;
+    display: contents;
+}
+
+  .value .value-list .text-group .text {
+    margin-bottom: 8px;
+    margin-top: 5px;
+    padding-left: 0;
+}
+
+  .value .value-list .text-group strong {
+    font-size: 16px;
+    padding-bottom: 8px;
+  }
+
+  .value .value-list .text-group span {
+    font-size: 13px;
+    padding-bottom: 32px;
+    word-break: keep-all;
+  }
+
+  /* what */
+  .what .inner > h2 {
+    font-size: 36px;
+    margin-top: 172px;
+    color: #fff;
+    padding-bottom: 60px;
+  }
+  
+  .what .what-content {
+
+  }
+
+  .what .what-list {
+    top: 274px;
+    overflow: hidden;
+  }
+  
+  .what .what-list-item {
+    padding-right: 68px;
+    width: 154px;
+  }
+  
+  .what .what-list-item:last-child {
+    padding-right: 0;
+  }
+
+  .what .what-list-item:nth-child(2) {
+    width: 235px;
+  }
+  
+  .what .what-list-item:nth-child(3) {
+    width: 220px;
+  }
+  
+  .what .what-list-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .what .what-list-item .title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .what .what-list-item h4 {
+    color: #fff;
+    
+  }
+  .what .what-list-item ul {
+    margin-top: 20px;
+  }
+  
+  
+  .what .what-list-item ul li {
+    font-size: 13px;
+    margin-top: 6px;
+    
+  }
+  
+  .what .what-list-item ul li > span {
+    letter-spacing: -0.5px;
+    font-size: 13px;
+    display: block;
+  }
+  
+  .what .swiper-pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 364px;
+  }
+
+
+  /* pagination */
+      
+  .swiper-pagination .swiper-pagination-bullet {
+  }
+
+  .swiper-pagination .swiper-pagination-bullet::before {
+    background-size: 8px;
+    height: 8px;
+    width: 8px;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-active::before {
+    background-size: 14px;
+    height: 14px;
+    width: 14px;
+  }
+
+  .swiper-pagination .swiper-pagination-bullet-b::before {
+    background-size: 8px;
+    height: 8px;
+    width: 8px;
+  }
+  
+  .swiper-pagination .swiper-pagination-bullet-b-active::before {
+    background-size: 14px;
+    height: 14px;
+    width: 14px;
+    
+  }
+}
